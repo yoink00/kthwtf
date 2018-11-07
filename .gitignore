@@ -7,3 +7,7 @@
 
 # .tfvars files
 *.tfvars
+
+**/control_ips.txt
+**/worker_ips.txt
+**/.terraform

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+packet_token=$(grep token $HOME/.packet-cli.json | sed 's/^\s*"token"\s*:\s*"\([^"]*\)".*$/\1/g')
+
+export PACKET_AUTH_TOKEN=$packet_token
+
+terraform $*
+
